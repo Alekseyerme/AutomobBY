@@ -14,19 +14,19 @@ public class Advertisement {
 
     @ManyToOne
     @JoinColumn(name = "MARK")
-    private com.project.classes.entity.Mark mark;
+    private Mark mark;
 
     @ManyToOne
     @JoinColumn(name = "BODYWORK")
-    private com.project.classes.entity.Bodywork bodywork;
+    private Bodywork bodywork;
 
     @ManyToOne
     @JoinColumn(name = "TRANSMISSION")
-    private com.project.classes.entity.Transmission transmission;
+    private Transmission transmission;
 
     @ManyToOne
     @JoinColumn(name = "DRIVE")
-    private com.project.classes.entity.Drive drive;
+    private Drive drive;
 
     @Column(name = "DESCRIPTION")
     private String description;
@@ -40,35 +40,35 @@ public class Advertisement {
     @Column(name = "PRICE")
     private double price;
 
-    public com.project.classes.entity.Mark getMark() {
+    public Mark getMark() {
         return mark;
     }
 
-    public void setMark(com.project.classes.entity.Mark mark) {
+    public void setMark(Mark mark) {
         this.mark = mark;
     }
 
-    public com.project.classes.entity.Bodywork getBodywork() {
+    public Bodywork getBodywork() {
         return bodywork;
     }
 
-    public void setBodywork(com.project.classes.entity.Bodywork bodywork) {
+    public void setBodywork(Bodywork bodywork) {
         this.bodywork = bodywork;
     }
 
-    public com.project.classes.entity.Transmission getTransmission() {
+    public Transmission getTransmission() {
         return transmission;
     }
 
-    public void setTransmission(com.project.classes.entity.Transmission transmission) {
+    public void setTransmission(Transmission transmission) {
         this.transmission = transmission;
     }
 
-    public com.project.classes.entity.Drive getDrive() {
+    public Drive getDrive() {
         return drive;
     }
 
-    public void setDrive(com.project.classes.entity.Drive drive) {
+    public void setDrive(Drive drive) {
         this.drive = drive;
     }
 

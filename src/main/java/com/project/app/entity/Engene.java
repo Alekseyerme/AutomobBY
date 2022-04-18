@@ -16,7 +16,7 @@ public class Engene {
 
     @ManyToOne
     @JoinColumn(name = "ENGENE")
-    private com.project.classes.entity.Car_model car_model;
+    private Car_model car_model;
 
     @Column(name = "POWER")
     private String power;

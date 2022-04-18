@@ -18,7 +18,7 @@ public class Mark {
     private String markName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "mark")
-    private Set<com.project.classes.entity.Car_model> models;
+    private Set<Car_model> models;
 
     public Set<Advertisement> getAdvertisements() {
         return advertisements;
@@ -33,7 +33,7 @@ public class Mark {
         return markName;
     }
 
-    public Set<com.project.classes.entity.Car_model> getModels() {
+    public Set<Car_model> getModels() {
         return models;
     }
 
@@ -45,7 +45,7 @@ public class Mark {
         this.markName = markName;
     }
 
-    public void setModels(Set<com.project.classes.entity.Car_model> models) {
+    public void setModels(Set<Car_model> models) {
         this.models = models;
     }
 
